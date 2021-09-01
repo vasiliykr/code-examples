@@ -1,0 +1,62 @@
+.PedigreeGraph {
+    --base-background-color: white;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.PedigreeGraph-Graph {
+    width: 100%;
+    height: 100%;
+}
+
+.PedigreeGraph-AncestryBadge {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.PedigreeGraph-Legend {
+    position: absolute;
+    left: 24px;
+    bottom: 24px;
+}
+
+.PedigreeGraph-ControlButtons {
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+}
+
+.PedigreeGraph-Palette {
+    position: absolute;
+}
+
+.PedigreeGraph-Palette .ant-modal-content {
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+}
+
+.PedigreeGraph-Palette .ant-modal-footer {
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.PedigreeGraph-PaletteBtn {
+    min-width: 123px;
+}
+
+.PedigreeGraph-PaletteBtn:not(:first-child) {
+    margin-left: 16px;
+}
+
+.PedigreeGraph-PaletteBtn_type_cancel {
+    background-color: white;
+}

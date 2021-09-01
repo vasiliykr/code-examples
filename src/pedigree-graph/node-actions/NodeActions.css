@@ -1,0 +1,31 @@
+.NodeActions {
+    --radius: 18px;
+    position: absolute;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.06);
+    border-radius: var(--radius);
+}
+
+.NodeActions-Button {
+    box-sizing: border-box;
+    width: 40px;
+    height: 36px;
+    padding: 0;
+    background: #FFFFFF;
+    border: 1px solid #ECECEC;
+    border-radius: 0;
+}
+
+.NodeActions-Icon {
+    max-width: 16px;
+    max-height: 16px;
+}
+
+.NodeActions > .NodeActions-Button:first-child {
+    border-top-left-radius: var(--radius);
+    border-bottom-left-radius: var(--radius);
+}
+
+.NodeActions > .NodeActions-Button:last-child {
+    border-top-right-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+}

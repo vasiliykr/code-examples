@@ -1,0 +1,55 @@
+.AncestryBadge {
+    box-sizing: border-box;
+    min-width: 320px;
+    height: 44px;
+    display: flex;
+}
+
+.AncestryBadge-Panel {
+    box-sizing: border-box;
+    border: 1px solid #ECECEC;
+    background-color: var(--base-background-color);
+    min-width: 160px;
+    /* max-width: 200px; */
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8px;
+}
+
+.AncestryBadge-Panel:not(:first-child) {
+    border-left: none;
+}
+
+.AncestryBadge-Panel:first-child {
+    border-radius: 6px 0 0 6px;
+}
+
+.AncestryBadge-Panel:last-child {
+    border-radius: 0 6px 6px 0;
+}
+
+.AncestryBadge-Caption {
+    font-size: 10px;
+    line-height: 12px;
+    color: #aeaeae;
+}
+
+.AncestryBadge-Value {
+    line-height: 21px;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: center;
+}
+
+.AncestryBadge-Value:hover {
+    /* overflow: initial; */
+    background-color: white;
+}
+
+.AncestryBadge-Value_type_undefined {
+    color: #aeaeae;
+}

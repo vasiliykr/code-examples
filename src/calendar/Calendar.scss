@@ -1,0 +1,52 @@
+@import '@rootCommon/assets/sass/_variables.sass';
+
+.calendar {
+    &__assign-board {
+        .assign-board {
+            padding: 10px 8px 12px;
+            width: 286px;
+
+            &__top {
+                align-items: center;
+            }
+
+            .ant-form-item-label {
+                width: 100%;
+            }
+
+            .ant-select-auto-complete.ant-select .ant-input {
+                height: 44px;
+                border-radius: 6px;
+
+                &:focus,
+                &:hover {
+                    border-color: $gray;
+                }
+            }
+
+            .form {
+                &__add {
+                    padding-top: 0;
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+
+                    .form__help {
+                        margin-top: 8px;
+                        margin-bottom: 0;
+                    }
+                }
+
+                &__added  {
+                    margin: 16px 0 0;
+                    padding: 0;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    &_text {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+}

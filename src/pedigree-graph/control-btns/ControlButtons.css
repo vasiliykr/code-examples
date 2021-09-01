@@ -1,0 +1,44 @@
+.ControlButtons {
+    display: flex;
+}
+
+.ControlButtons-Btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+}
+
+.ControlButtons-Btn_locked {
+    border-radius: 18px;
+}
+
+.ControlButtons-Btn:not(:last-child) {
+    margin-right: 16px;
+}
+
+.ControlButtons-Menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.ControlButtons-Menu > *:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.ControlButtons-Menu > *:last-child {
+    margin-bottom: 0;
+}
+
+.ControlButtons-Popover .ant-popover-inner{
+    border-radius: 24px;
+}
+
+/* Remove popover arrow */
+.ControlButtons-Popover .ant-popover-arrow {
+    display: none;
+}
+
+.ControlButtons-Popover .ant-popover-inner-content {
+    padding: 24px;
+}

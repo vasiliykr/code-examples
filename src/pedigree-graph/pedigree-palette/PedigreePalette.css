@@ -1,0 +1,73 @@
+.PedigreePalette {
+    /* width: fit-content; */
+}
+
+.PedigreePalette-Row {
+    display: flex;
+    justify-content: center;
+}
+
+.PedigreePalette-Mother::before,
+.PedigreePalette-Father::before,
+.PedigreePalette-Spouse::before,
+.PedigreePalette-Brother::before,
+.PedigreePalette-Sister::before,
+.PedigreePalette-Child_type_son::before,
+.PedigreePalette-Child_type_daughter::before,
+.PedigreePalette-Child_type_unknown::before {
+    position: absolute;
+    content: '';
+    border: 1px dashed white;
+}
+
+.PedigreePalette-Mother::before {
+    top: 40px;
+    left: -20px;
+    width: 20px;
+    height: 80px;
+    border-right: none;
+    border-bottom: none;
+}
+
+.PedigreePalette-Father::before {
+    top: 40px;
+    right: -21px;
+    width: 20px;
+    border-bottom: none;
+}
+
+.PedigreePalette-Spouse::before {
+    top: 40px;
+    right: -40px;
+    width: 40px;
+    height: 0;
+    border-bottom: none;
+}
+
+.PedigreePalette-Brother::before,
+.PedigreePalette-Sister::before,
+.PedigreePalette-Child_type_daughter::before {
+    top: -21px;
+    right: 40px;
+    width: 118px;
+    height: 20px;
+    border-left: none;
+    border-bottom: none;
+}
+
+.PedigreePalette-Child_type_unknown::before {
+    top: -21px;
+    left: 40px;
+    width: 120px;
+    height: 20px;
+    border-right: none;
+    border-bottom: none;
+}
+
+.PedigreePalette-Child_type_son::before {
+    top: -41px;
+    right: 39px;
+    width: 0px;
+    height: 40px;
+    border-right: none;
+}

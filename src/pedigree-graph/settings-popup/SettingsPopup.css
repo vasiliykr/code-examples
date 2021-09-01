@@ -1,0 +1,36 @@
+.SettingsPopup {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.SettingsPopup-Handlers {
+    width: 470px;
+    height: 120px;
+    background: #FFFFFF;
+    border: 1px solid #ECECEC;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.06);
+    border-radius: 24px;
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.SettingsPopup-Btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+}
+
+.SettingsPopup-Relatives, .SettingsPopup-States {
+    justify-content: space-between;
+}
+
+.SettingsPopup-Relative, .SettingsPopup-State {
+    margin: 0;
+}
